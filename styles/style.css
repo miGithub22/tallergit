@@ -1,1 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sobre-nosotros p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.iconos img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.iconos img:hover {
+    transform: scale(1.1);
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Sección Contacto */
+.contacto {
+    padding: 40px;
+    background-color: #e9ecef;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form-contacto input, 
+#form-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form-contacto button {
+    background-color: #28a745;
+}
+
+#form-contacto button:hover {
+    background-color: #218838;
+}
+
+.datos-contacto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
