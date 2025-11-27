@@ -7,17 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Botón "Contactar" -> scroll a la sección de contacto (debes tenerla en tu HTML)
+    // Botón "Contactar" -> scroll a la sección de contacto
     const btnContactar = document.querySelector("button:nth-of-type(2)");
     btnContactar.addEventListener("click", () => {
-        const contacto = document.querySelector("#contacto");
-        if (contacto) {
-            contacto.scrollIntoView({
-                behavior: "smooth"
-            });
-        } else {
-            alert("La sección de contacto no está disponible.");
-        }
+        document.querySelector("#contacto").scrollIntoView({
+            behavior: "smooth"
+        });
     });
 
     // Efecto hover dinámico para todos los botones
@@ -25,13 +20,17 @@ document.addEventListener("DOMContentLoaded", function() {
     botones.forEach(boton => {
         boton.addEventListener("mouseenter", () => {
             boton.style.transform = "scale(1.1)";
-            boton.style.backgroundColor = "#4CAF50";
-            boton.style.color = "#fff";
         });
         boton.addEventListener("mouseleave", () => {
             boton.style.transform = "scale(1)";
-            boton.style.backgroundColor = "";
-            boton.style.color = "";
         });
+    });
+
+    // Envío del formulario
+    const form = document.getElementById("form-contacto");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Gracias por tu mensaje, nos pondremos en contacto pronto.");
+        form.reset();
     });
 });
